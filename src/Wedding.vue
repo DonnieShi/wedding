@@ -7,13 +7,13 @@
 
 <script>
   import Editor from "./components/Editor.vue"
-  import BeiAn from "./components/BeiAn.vue"
+  // import BeiAn from "./components/BeiAn.vue"
 
   export default {
     props: [],
     components: {
       Editor,
-      BeiAn,
+      // BeiAn,
     },
     name: 'Wedding'
   }
