@@ -20,25 +20,27 @@ const DATE_MAP = {
 export default {
   code: 
 `
-// 今天心情好
-// 我给你表演写代码
-// 我要开始写啦
-const { ${BOY}, ${GIRL} } = 🇨🇳 ;
-(${BOY}, ${GIRL}).相识('${moment(DATE_MAP.MEET).format('LL')}');
-(${BOY}, ${GIRL}).相遇('${moment(DATE_MAP.CONFESSION).format('LL')}');
-(${BOY}, ${GIRL}).表白('${moment(DATE_MAP.CONFESSION_YES).format('LL')}');
-(${BOY}, ${GIRL}).求婚('${moment(DATE_MAP.CONFESSION_YES).format('LL')}');
-
-${BOY}.say('WoW，已经${calDiffStr(DATE_MAP.CONFESSION_YES)}了！');
+// 嘿嘿
+// 我给你表演个写代码
+// 写之前忍不住 服饰一首
+// 尘世是非 躲不开人间风月 人间风月 躲不开情深意长
 ....
-
-// 希望不远的将来
-${BOY}.say('嫁给我吧!❤️');
-${GIRL}.response('Yes, I do！');
-
-(${BOY}, ${GIRL}).结婚('xxxx年xx月xx日')
-(${BOY}, ${GIRL}).发请帖('yyyy年yy月yy日');
-
+// 哈哈 我要开始写啦
+int year = ${BOY}.birth();
+while (year <= ${BOY}.curAge() )
+{
+    if (${BOY}.findPerson() != ${GIRL}) 
+    {
+      year ++;
+    }
+    else
+    {
+      ${BOY}.say('嫁给我吧!❤️');
+      ${GIRL}.response('Yes, I do！');
+      Utils.marry(${BOY}, ${GIRL})
+      Utils.generateInvitation(${BOY}, ${GIRL});
+    }
+}
 // 好了我写完了
 // 我要开始运行啦`,
   executions: [{
@@ -78,17 +80,20 @@ ${GIRL}.response('Yes, I do！');
   }],
   barrages: [
     '66666666',
-    '愿你美梦成真',
+    '牛逼啊 川哥',
     '你的邀请函真是美',
-    '人美心更美',
+    '陶陶最美',
     '你是最棒的',
     '哇哇哇',
-    '还差女朋友吗',
-    '今晚翻你牌',
-    '看朕给你打下的江山',
+    '牛',
+    '郎才女貌',
+    '一朵鲜花插在牛粪上',
     '你写代码老快了',
     '你的代码真是棒',
     '😗 😙 😚 😋 ',
-    '只要代码写得好，单身永远跑不了'
+    '只要代码写得好，单身永远跑不了',
+    '祝 幸福',
+    '一定赶到',
+    '酒备好'
   ],
 }
