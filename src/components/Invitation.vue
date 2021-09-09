@@ -8,7 +8,7 @@
             <p>我们结婚啦！</p>
             <p><b>陶陶 🐱 & 🐷 川川</b></p>
             <p>时间：10月2号</p>
-            <p>地点：<b>河南省信阳市潢川县京都酒店</b></p> 
+            <p>地点：<b>河南省信阳市潢川县新都酒店</b></p> 
             <div class="content-inside-bless">
               <input
                 placeholder="写下你的祝福" 
