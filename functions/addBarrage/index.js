@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const tcb = require('@cloudbase/node-sdk')
 
-const app = tcb.init({ env: 'elvinn-1aa07a' })
+const app = tcb.init({ env: 'wedding-8golxnc0da734bc5' })
 const db = app.database()
 const barrageCollection = db.collection('wedding-invitation-barrage')
 
